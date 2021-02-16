@@ -8,9 +8,6 @@ h2 {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 125%;
-    display: inline-block;
-    text-align: left;
-    padding-inline-end: 10px;
 }
 
 h3 {
@@ -34,13 +31,4 @@ img {
     width: auto ;
     max-width: 45%;
     height: auto ;
-}
-
-.inline-div {
-    display: block;
-    text-align: left;
-}
-
-.project-ovr {
-    line-height: 5px;
 }

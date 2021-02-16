@@ -36,6 +36,10 @@ img {
     height: auto ;
 }
 
+p {
+    line-height: 24px;
+}
+
 .inline-div {
     display: block;
     text-align: left;

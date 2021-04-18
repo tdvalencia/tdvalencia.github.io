@@ -1,4 +1,4 @@
-//stopwatch variables
+// stopwatch variables
 const timer = document.getElementById('stopwatch');
 
 var hr = 0;
@@ -6,74 +6,38 @@ var min = 0;
 var sec = 0;
 var stoptime = true;
 
-//gets the variables for the cookies
-var cookie = document.getElementById('cookie')
-var close = document.getElementById('close')
+// gets the variables for the cookies
+var cookie = document.getElementById('cookie0')
+var close = document.getElementById('close0')
 
-//deals with count
+// deals with count
 var counter = document.getElementById('count')
 var count = 0
 
-cookie.style = 'display: flex'
+// game functions
+function newCookie()
+{
+  var rand = randInt(2)
 
-close.addEventListener('click', function(){
-    cookie.style = 'display: none'
-    count++
-    counter.innerHTML = `cookies clicked: ${count}`
-    cookie.style = 'display: flex'
-    startTimer()
-})
-
-function startTimer() {
-  if (stoptime == true) {
-        stoptime = false;
-        timerCycle();
-    }
-}
-function stopTimer() {
-  if (stoptime == false) {
-    stoptime = true;
-  }
+  cookie = document.getElementById('cookie' + rand)
+  close = document.getElementById('close' + rand)
+  close.addEventListener('click', update)
+  
+  cookie.style = 'display: flex'
 }
 
-function timerCycle() {
-    if (stoptime == false) {
-    sec = parseInt(sec);
-    min = parseInt(min);
-    hr = parseInt(hr);
-
-    sec = sec + 1;
-
-    if (sec == 60) {
-      min = min + 1;
-      sec = 0;
-    }
-    if (min == 60) {
-      hr = hr + 1;
-      min = 0;
-      sec = 0;
-    }
-
-    if (sec < 10 || sec == 0) {
-      sec = '0' + sec;
-    }
-    if (min < 10 || min == 0) {
-      min = '0' + min;
-    }
-    if (hr < 10 || hr == 0) {
-      hr = '0' + hr;
-    }
-
-    timer.innerHTML = hr + ':' + min + ':' + sec;
-
-    setTimeout("timerCycle()", 1000);
-  }
+function update()
+{
+  cookie.style = 'display: none'
+  count++
+  counter.innerHTML = `cookies clicked: ${count}`
+  setTimeout(newCookie, 100)
 }
 
-function resetTimer() {
-    timer.innerHTML = '00:00:00';
-    stoptime = true;
-    hr = 0;
-    sec = 0;
-    min = 0;
+// helper functions
+function randInt(max) {
+  return Math.floor(Math.random() * max)
 }
+
+// initializes close button
+close.addEventListener('click', update)

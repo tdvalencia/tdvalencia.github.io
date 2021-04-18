@@ -7,15 +7,11 @@ html, body {
 body {
     display: table;
 }
-img {
-    max-width: 55%;
-    height: auto;
-}
-.text {
+.media {
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    font-size: 2vw;
+    font-size: x-large;
 }
 .dark{
     background-color: #222;
@@ -28,5 +24,6 @@ a:hover {
     color: yellow;
 }
 * {
+    font-size: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

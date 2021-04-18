@@ -7,20 +7,27 @@
         <title>cookie click</title>
     </head>
     <body>
+        <a href="media/" id="link">link</a>
         <div class="text">
             <p id="count">cookies clicked: 0</p>
             <p id="stopwatch">0:00:00</p>
         </div>
-        <div id="cookie" class="cookie-banner" style="display: none">
+        <div id="cookie0" class="cookie-banner" style="display: flex">
             <p>
                 By using our website, you agree to our 
-                <a href="cookies/cookies.html">cookie policy</a>
+                <a href="cookies/">cookie policy</a>
             </p>
-            <button id="close" class="close">&times;</button>
+            <button id="close0" class="close">&times;</button>
+        </div>
+        <div id="cookie1" class="cookie-banner" style="display: none">
+            <p>
+                test
+            </p>
+            <button id="close1" class="close">&times;</button>
         </div>
         <script src="index.js"></script>
     </body>
     <script>
-        document.body.classList.toggle("dark");
+        document.body.classList.toggle("dark")
     </script>
 </html>

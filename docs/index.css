@@ -1,0 +1,51 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+body {
+    display: table;
+}
+.text {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: x-large;
+}
+.cookie-banner {
+    position: fixed;
+    bottom: 40px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    padding: 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7);
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+.close {
+    height: 25px;
+    background-color: #777;
+    border: none;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+a:link {
+    color: cornflowerblue;
+}
+a:hover {
+    color: yellow;
+}
+* {
+    font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

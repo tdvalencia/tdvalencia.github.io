@@ -40,6 +40,10 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
+.cookie-left {
+    position: fixed;
+    right: 40px;
+}
 .close {
     height: 25px;
     background-color: #777;

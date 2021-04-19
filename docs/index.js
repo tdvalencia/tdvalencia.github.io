@@ -9,7 +9,7 @@ var count = 0
 // game functions
 function newCookie()
 {
-  var rand = randInt(2)
+  var rand = randInt(3)
 
   cookie = document.getElementById('cookie' + rand)
   close = document.getElementById('close' + rand)

@@ -1,5 +1,3 @@
-import * as timer from 'timer.js'
-
 // gets the variables for the cookies
 var cookie = document.getElementById('cookie')
 var close = document.getElementById('close')

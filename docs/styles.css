@@ -194,6 +194,7 @@ body {
 
 .accent-mich {
     color: var(--mich);
+    background-color: rgb(4, 6, 145);
     font-weight: 500;
     text-decoration: underline;
     text-decoration-color: var(--mich-glow);
